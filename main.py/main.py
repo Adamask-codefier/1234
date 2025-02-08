@@ -13,5 +13,7 @@ def index():
   return f'<h1>ver un dato randomizado!!</h1>'
 @app.route("/random_fact")
 def facts():
-  return  f'<p>{random.choice(facts_list)}</p>'
+  return  f' <a href="/random_fact">¡Ver un dato aleatorio!</a>
+
+  
 app.run(debug=True)
